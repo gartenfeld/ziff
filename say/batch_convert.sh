@@ -1,0 +1,1 @@
+for f in *.aiff; do ffmpeg -i "$f" -codec:a libmp3lame -q:a 3 "mp3/${f%.aiff}.mp3"; done
